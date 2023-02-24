@@ -1,0 +1,16 @@
+body {
+    font-family:Tahoma, sans-serif;
+}
+h1,h2,h3 {
+    color: slateblue;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1.5em;
+}
+td, th {border: 1px solid black;}
+.evenrow {
+    background-color: lightgrey;
+}
