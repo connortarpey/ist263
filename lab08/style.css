@@ -1,0 +1,29 @@
+body {
+    color: #000066;
+    background-color: #99ccff;
+}
+a {
+    color: #000000;
+}
+h1, h2, h3 {
+    color: #2e2e2e;
+}
+nav {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+nav a {
+color: #120748;
+}
+nav a:hover {
+    background-color: #a5a5a5;
+}
+.float {float: right;}
+.clear {clear: both;}
+
+.row1, .row2 {display: flex; background-color: aliceblue; border-radius: 1em; margin: 10px;}
+.row2 {margin-top: 40px;}
+.form {flex: 2; order: 1;}
+.map {flex:1; order: 2;}
+.address, .links, .form, .map {padding: 20px;}å
