@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #bdb7b7;
+            padding: 10px;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav div {
+            padding: 10px;
+        }
+        .navsplit {
+            display: flex; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>split navigation</h1>
+    <nav class="nav4"> <!-- big row with two oclumns -->
+        <div class="navsplit"> <!-- column for big row and row for nav items-->
+            <div><a href="http://www.amazon.com" id="firstlink">Amazon</a></div>
+            <div><a href="http://www.google.com" id="secondlink">Google</a></div>
+            <div><a href="http://www.meta.com" id="thirdlink">Meta</a></div>
+        </div>
+        <div class="navsplit">
+            <div><p>&#128512;</p></div>
+            <div><p>&#128525;</p></div>
+        </div>
+     </nav>
+</body>
+</html>
