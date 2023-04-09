@@ -9,6 +9,9 @@ a {
 h1, h2, h3 {
     color: #2e2e2e;
 }
+.otherskillstext {
+    color: #ffffff;
+}
 nav {
     margin-bottom: 30px;
     padding: 10px;
@@ -86,7 +89,7 @@ h1 {
 
 }
 .otherskills {
-    background-color: #3d3d3d;
+    background-color: #000000;
     color: #FFFFFF;
     border-radius: 10px;
     padding: 40px;
