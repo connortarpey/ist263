@@ -5,6 +5,7 @@ body {
 a {
     color: #000000;
 }
+
 h1, h2, h3 {
     color: #2e2e2e;
 }
@@ -65,7 +66,7 @@ h1 {
     text-align: center;
     padding: 15px;
 }
-.finallogo {
+.finalcutprologo {
     width: 100px;
 }
 
@@ -96,8 +97,24 @@ h1 {
 }
 .bioimage {
     max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (max-width: 600px) {
     nav a {display: block;}
     span {display: none;}
     }
+.skip {
+    background-color: #0f4e55;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions element relative to top left of viewport */
+    top: 10px;
+    left: -999px; /* push it off the left side */
+}
+.skip:focus {
+    left: 10px; /* bring it back when they tab to it */
+}
