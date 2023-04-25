@@ -514,8 +514,3 @@ span {
         display: none;
     }
 }
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
-}
