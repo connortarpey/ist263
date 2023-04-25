@@ -25,6 +25,19 @@ a, a:visited, a:hover, a:link {
     text-decoration: none;
     cursor: pointer;
 } 
+.skip {
+    background-color: #696969;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions element relative to top left of viewport */
+    top: 10px;
+    left: -999px; /* push it off the left side */
+}
+.skip:focus {
+    left: 10px; /* bring it back when they tab to it */
+}
 .empowerklogo {
     max-width: 250px;
     width: 100%;
@@ -253,9 +266,115 @@ span {
     margin: 0;
 }
 .footer-box p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
 }
+#services {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 1rem;
+    width: 20%;
+    box-sizing: border-box;
+  }
+  
+  .service-box h2 {
+    font-weight: bold;
+  }
+  
+  .service-box p {
+    text-align: center;
+  }
+  
+  #how-it-works {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .how-it-works-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+  
+.how-it-works-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 30px;
+    width: 30%;
+    height: 350px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    margin-bottom: 1rem;
+    flex: 0 0 calc(33.333% - 20px);
+}
+  
+  .how-it-works-box h2 {
+    font-weight: bold;
+  }
+
+  .how-it-works-box h1 {
+    font-size: 35px;
+    width: 100%;
+  }
+  
+  .how-it-works-box p {
+    text-align: center;
+  }
+  
+  .background-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .background-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+  }
+
 @media screen and (max-width: 799px) {
     .socials {
         display: flex;
@@ -264,6 +383,9 @@ span {
     }
     .mainnav {
         display: block;
+    }
+    .navlogo {
+        justify-content: center;
     }
     .process-box {
         width: 90%;
@@ -281,6 +403,15 @@ span {
     }
     .nobreak {
         display: none;
+    }
+    .giflogo {
+        width: 50%;
+    }
+    .heading1 {
+        font-size: 20px;
+        color:#FFFFFF;
+        text-align: center;
+        margin-top: -40px;
     }
 }
 @media screen and (min-width: 800px) {
