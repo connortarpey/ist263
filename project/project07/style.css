@@ -442,6 +442,15 @@ span {
 .firstrow {
     display: flex;
 }
+.hidden {
+    filter:blur(2px);
+    opacity: 0;
+    transition: all 1.2s;
+}
+.show {
+    filter:blur(0);
+    opacity: 1;
+}
 @media screen and (max-width: 799px) {
     .socials {
         display: flex;
@@ -503,5 +512,10 @@ span {
 @media screen and (min-width: 800px) {
     .intromobilevideo {
         display: none;
+    }
+}
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
     }
 }
