@@ -506,10 +506,13 @@ span {
     }
     .how-it-works-box {
         margin-top: 20px;
+        width: 100%;
+        height: auto;
     }
     .how-it-works-header {
         padding-bottom: 5px;
     }
+    
 }
 @media screen and (min-width: 800px) {
     .intromobilevideo {
